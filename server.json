@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mgwellpay/thruai",
+  "description": "The meta-infrastructure MCP server for AI agents. One API key for voice agents, phone calls, workflows, knowledge base, campaigns, self-learning, and webhooks. Replaces Twilio + Deepgram + ElevenLabs + OpenAI with a single credential.",
+  "repository": {
+    "url": "https://github.com/mgWellPay/thruai-mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@thruai/mcp-server",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Your ThruAI API key (get one at https://thru.ai)",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "THRUAI_API_KEY"
+        },
+        {
+          "description": "ThruAI API base URL (defaults to https://api.thru.ai)",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false,
+          "name": "THRUAI_BASE_URL"
+        }
+      ]
+    }
+  ]
+}
