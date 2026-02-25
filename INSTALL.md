@@ -2,7 +2,7 @@
 
 ## Option 1: npm (when published)
 ```bash
-npm install -g @thruai/mcp-server
+npm install -g github:mgWellPay/thruai-mcp-server
 ```
 
 ## Option 2: Install from GitHub

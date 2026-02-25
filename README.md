@@ -4,6 +4,9 @@
 
 Enables AI assistants like Claude, GPT, and custom agents to discover and use ThruAI's voice AI capabilities via the Model Context Protocol (MCP).
 
+> **⚡ Beta Notice:** ThruAI is in active development. The default API endpoint (`api.thru.ai`) may require a custom base URL during beta. Set `THRUAI_BASE_URL` in your environment if needed. [Get early access →](https://thru.ai)
+
+
 ## Features
 
 - 🚀 **Quick Start**: Create a fully configured voice agent with phone number in one command
@@ -28,20 +31,20 @@ Enables AI assistants like Claude, GPT, and custom agents to discover and use Th
 No installation required - run directly with npx:
 
 ```bash
-THRUAI_API_KEY=sk_live_... npx @thruai/mcp-server
+THRUAI_API_KEY=sk_live_... npx github:mgWellPay/thruai-mcp-server
 ```
 
 ### Option 2: Install globally
 
 ```bash
-npm install -g @thruai/mcp-server
+npm install -g github:mgWellPay/thruai-mcp-server
 THRUAI_API_KEY=sk_live_... thruai-mcp
 ```
 
 ### Option 3: Install locally
 
 ```bash
-npm install @thruai/mcp-server
+npm install github:mgWellPay/thruai-mcp-server
 ```
 
 ## Quick Start
@@ -61,7 +64,7 @@ Add to your Claude Code config (`~/.config/claude-code/config.json`):
   "mcpServers": {
     "thruai": {
       "command": "npx",
-      "args": ["@thruai/mcp-server"],
+      "args": ["github:mgWellPay/thruai-mcp-server"],
       "env": {
         "THRUAI_API_KEY": "sk_live_...",
         "THRUAI_BASE_URL": "https://api.thru.ai"
@@ -422,7 +425,7 @@ Discover exact API schemas to prevent field name typos. Returns Zod schemas for 
   "mcpServers": {
     "thruai": {
       "command": "npx",
-      "args": ["@thruai/mcp-server"],
+      "args": ["github:mgWellPay/thruai-mcp-server"],
       "env": {
         "THRUAI_API_KEY": "sk_live_your_key_here",
         "THRUAI_BASE_URL": "https://api.thru.ai"
@@ -442,7 +445,7 @@ Discover exact API schemas to prevent field name typos. Returns Zod schemas for 
   "mcpServers": {
     "thruai": {
       "command": "npx",
-      "args": ["@thruai/mcp-server"],
+      "args": ["github:mgWellPay/thruai-mcp-server"],
       "env": {
         "THRUAI_API_KEY": "sk_live_your_key_here"
       }
@@ -612,7 +615,7 @@ Make sure:
 
 1. Check config file location and syntax
 2. Restart Claude Code/Desktop
-3. Check stderr output: `npx @thruai/mcp-server 2>&1 | tee mcp.log`
+3. Check stderr output: `npx github:mgWellPay/thruai-mcp-server 2>&1 | tee mcp.log`
 4. Verify API key is valid
 
 ## Support
