@@ -38,7 +38,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thruai/thruai-mcp-server.git"
+    "url": "https://github.com/mgWellPay/thruai-mcp-server.git"
   },
   "bugs": {
     "url": "https://github.com/thruai/thruai-mcp-server/issues"
@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.16.11",
-    "typescript": "^5.6.3"
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=18.0.0"
